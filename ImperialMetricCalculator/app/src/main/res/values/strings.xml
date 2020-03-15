@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Imperial-Metric Calculator</string>
+    <string name="far">F</string>
+    <string name="cel">C</string>
 </resources>

@@ -7,18 +7,19 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/temperatureInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginLeft="99dp"
         android:layout_marginTop="104dp"
         android:ems="10"
-        android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:inputType="numberDecimal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/progTitle" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/progTitle"
         android:layout_width="251dp"
         android:layout_height="43dp"
         android:layout_marginTop="32dp"
@@ -27,4 +28,54 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tempConversionText"
+        android:layout_width="14dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="111dp"
+        android:text="@string/far"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/temperatureInput"
+        app:layout_constraintTop_toBottomOf="@+id/progTitle" />
+
+    <TextView
+        android:id="@+id/tempConversionText2"
+        android:layout_width="14dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="63dp"
+        android:text="@string/cel"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/resultText"
+        app:layout_constraintTop_toBottomOf="@+id/calcButton" />
+
+    <Button
+        android:id="@+id/calcButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Calculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/temperatureInput" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="213dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginLeft="99dp"
+        android:layout_marginTop="62dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calcButton" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
