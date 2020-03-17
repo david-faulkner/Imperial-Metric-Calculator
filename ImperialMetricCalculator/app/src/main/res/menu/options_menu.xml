@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/tempOption"
+          android:title="Temperature"
+          app:showAsAction="never">
+    </item>
+
+    <item android:id="@+id/distOption"
+          android:title="Distance"
+          app:showAsAction="never">
+    </item>
+
+
+</menu>

@@ -2,4 +2,6 @@
     <string name="app_name">Imperial-Metric Calculator</string>
     <string name="far">F</string>
     <string name="cel">C</string>
+    <string name="mi">Mi</string>
+    <string name="km">KM</string>
 </resources>
