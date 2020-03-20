@@ -40,6 +40,7 @@ public class Distance extends Fragment {
         calculateButton = (Button) view.findViewById(R.id.calcButton);
         switchModeButton = (Button) view.findViewById(R.id.switchModeButton);
 
+        //function for calculate button
         calculateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -75,6 +76,7 @@ public class Distance extends Fragment {
             }//end onClick
         });//end setOnClickListener
 
+        //function to switch between calculation modes
         switchModeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

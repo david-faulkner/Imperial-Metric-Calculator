@@ -26,28 +26,23 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu (Menu menu) {
-        getMenuInflater().inflate(
-                R.menu.options_menu, menu);
+        //inflate the menu when the overflow icon is clicked
+        getMenuInflater().inflate(R.menu.options_menu, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
+        //item in the overflow menu is clicked
         switch(item.getItemId()) {
             case R.id.distOption:
-                //display pop up
-                Toast.makeText(this, "Switching to distance conversion...", Toast.LENGTH_LONG);
-
-                //nav to next fragment
+                //nav to distance fragment
                 viewPager.setCurrentItem(1);
 
                 return true;
             case R.id.tempOption:
-                //display pop up
-                Toast.makeText(this, "Switching to temperature conversion...", Toast.LENGTH_LONG);
-
-                //nav to next fragment
+                //nav to temperature fragment
                 viewPager.setCurrentItem(0);
 
                 return true;
@@ -59,8 +54,8 @@ public class MainActivity extends AppCompatActivity {
     //function to set up the ViewPager with new fragments
     public void createViewPager(ViewPager pager) {
         FragmentStatePagerAdapter tempAdapter = new FragmentStatePagerAdapter(getSupportFragmentManager());
-        tempAdapter.addFragment(new Temperature());
-        tempAdapter.addFragment(new Distance());
+        tempAdapter.addFragment(new Temperature()); //index 0, defaults to this fragment
+        tempAdapter.addFragment(new Distance()); //index 1
         pager.setAdapter(tempAdapter);
     }
 

@@ -7,38 +7,12 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!--View pager will hold the fragments on screen-->
     <androidx.viewpager.widget.ViewPager
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/placeholderContainer">
-
-
     </androidx.viewpager.widget.ViewPager>
-
-    <!--
-    <fragment
-        android:name="com.example.imperial_metriccalculator.Temperature"
-        android:id="@+id/temperature_fragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout="@layout/activity_temperature" />
-
-
-    <fragment
-        android:name="com.example.imperial_metriccalculator.Distance"
-        android:id="@+id/distance_fragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        />
-    -->
     
 
 </LinearLayout>
